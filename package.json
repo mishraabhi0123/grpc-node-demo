@@ -1,0 +1,22 @@
+{
+  "name": "grpc-example-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start-recipe-ms": "node ./recipe-ms/main.js",
+    "start-processor-ms": "node ./processor-ms/main.js",
+    "start": "concurrently 'npm run start-recipe-ms' 'npm run start-processor-ms'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.9.14",
+    "@grpc/proto-loader": "^0.7.10",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
